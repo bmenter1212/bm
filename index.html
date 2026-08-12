@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="BM Enterprises - Government Approved Electrical Contractor providing HT, LT, industrial electrical installation, maintenance and electrical solutions.">
+
+    <meta name="keywords"
+          content="BM Enterprises, Electrical Contractor, HT Electrical Work, LT Electrical Work, Industrial Electrical Contractor, Aurangabad, Chhatrapati Sambhajinagar, Shendra MIDC">
+
+    <meta name="author" content="BM Enterprises">
+
+    <title>BM Enterprises | Govt. Approved Electrical Contractor</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #ffffff;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            width: 100%;
+            background: #0b1726;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 12px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-area img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .logo-text h2 {
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            font-size: 11px;
+            color: #ffbd00;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            font-size: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffbd00;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 90vh;
+            background:
+                linear-gradient(rgba(5,15,25,0.75), rgba(5,15,25,0.75)),
+                url("images/hero-1.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-content h1 {
+            font-size: 65px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero-content h2 {
+            font-size: 25px;
+            color: #ffbd00;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            max-width: 750px;
+            margin: auto;
+            color: #eeeeee;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #ffbd00;
+            color: #111;
+        }
+
+        .btn-primary:hover {
+            background: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #111;
+        }
+
+        /* =========================
+           COMMON SECTION
+        ========================= */
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #0b1726;
+            margin-bottom: 10px;
+        }
+
+        .section-title span {
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #ffbd00;
+            margin: auto;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 15px auto 0;
+            color: #666;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: #f5f7fa;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .about-content h3 {
+            font-size: 30px;
+            color: #0b1726;
+            margin-bottom: 15px;
+        }
+
+        .about-content p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .about-list li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: #ffbd00;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            background: white;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            padding: 35px 25px;
+            background: #f5f7fa;
+            border-radius: 10px;
+            text-align: center;
+            border-bottom: 4px solid transparent;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-bottom: 4px solid #ffbd00;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 21px;
+            color: #0b1726;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* =========================
+           PROJECT GALLERY
+        ========================= */
+
+        .projects {
+            background: #f5f7fa;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 260px;
+            background: #ddd;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            color: white;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+        }
+
+        .project-overlay h3 {
+            font-size: 20px;
+        }
+
+        .project-overlay p {
+            font-size: 13px;
+        }
+
+        /* =========================
+           CLIENTS
+        ========================= */
+
+        .clients {
+            background: white;
+        }
+
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .client-box {
+            min-height: 110px;
+            background: #f5f7fa;
+            border: 1px solid #e5e5e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            color: #333;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .client-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        /* =========================
+           WHY US
+        ========================= */
+
+        .why-us {
+            background: #0b1726;
+            color: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            text-align: center;
+        }
+
+        .why-box {
+            padding: 20px;
+        }
+
+        .why-box .number {
+            font-size: 40px;
+            color: #ffbd00;
+            font-weight: bold;
+        }
+
+        .why-box h3 {
+            margin: 8px 0;
+        }
+
+        .why-box p {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: #f5f7fa;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .contact-box h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+            color: #0b1726;
+        }
+
+        .contact-item {
+            margin-bottom: 18px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #0b1726;
+            margin-bottom: 3px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #07101c;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        .footer-company {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* =========================
+           WHATSAPP
+        ========================= */
+
+        .whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            z-index: 2000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .hero-content h1 {
+                font-size: 48px;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .client-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                padding: 10px 18px;
+            }
+
+            .logo-area img {
+                width: 45px;
+                height: 45px;
+            }
+
+            .logo-text h2 {
+                font-size: 19px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                width: 100%;
+                background: #0b1726;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                border-top: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 15px 20px;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+
+            .hero-content h1 {
+                font-size: 40px;
+            }
+
+            .hero-content h2 {
+                font-size: 19px;
+            }
+
+            .hero-content p {
+                font-size: 15px;
+            }
+
+            section {
+                padding: 60px 18px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image img {
+                height: 280px;
+            }
+
+            .service-grid,
+            .project-grid,
+            .client-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                height: 240px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo-area">
+
+            <img src="images/logo.png" alt="BM Enterprises Logo">
+
+            <div class="logo-text">
+                <h2>BM ENTERPRISES</h2>
+                <span>GOVT. APPROVED ELECTRICAL CONTRACTOR</span>
+            </div>
+
+        </div>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#clients">Clients</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>BM ENTERPRISES</h1>
+
+        <h2>Govt. Approved Electrical Contractor</h2>
+
+        <p>
+            Reliable Electrical Engineering Solutions for
+            Industrial, Commercial and Infrastructure Projects.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#services" class="btn btn-primary">
+                Our Services
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>About BM Enterprises</h2>
+
+            <span></span>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="images/project-1.jpg"
+                    alt="BM Enterprises Electrical Project">
+
+            </div>
+
+            <div class="about-content">
+
+                <h3>Professional Electrical Solutions</h3>
+
+                <p>
+                    BM Enterprises is a Government Approved Electrical
+                    Contractor providing complete electrical solutions
+                    for industrial, commercial and infrastructure projects.
+                </p>
+
+                <p>
+                    Our experienced team specializes in electrical
+                    installation, maintenance, HT/LT electrical works,
+                    industrial projects and electrical equipment solutions.
+                </p>
+
+                <ul class="about-list">
+
+                    <li>Government Approved Electrical Contractor</li>
+
+                    <li>Industrial Electrical Installation</li>
+
+                    <li>HT & LT Electrical Works</li>
+
+                    <li>Electrical Maintenance</li>
+
+                    <li>Experienced Technical Team</li>
+
+                    <li>Quality & Safety Focused Work</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Services</h2>
+
+            <span></span>
+
+            <p>
+                Complete electrical solutions for industrial
+                and commercial requirements.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">⚡</div>
+
+                <h3>HT Electrical Works</h3>
+
+                <p>
+                    HT electrical installation, maintenance,
+                    transformer, HT panel and related electrical works.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔌</div>
+
+                <h3>LT Electrical Works</h3>
+
+                <p>
+                    LT panel installation, cable laying,
+                    distribution systems and industrial wiring.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🏭</div>
+
+                <h3>Industrial Electrical</h3>
+
+                <p>
+                    Complete electrical installation and
+                    maintenance solutions for industries.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">💡</div>
+
+                <h3>Lighting Solutions</h3>
+
+                <p>
+                    Industrial lighting, high bay lights,
+                    street lighting and complete lighting installation.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔧</div>
+
+                <h3>Electrical Maintenance</h3>
+
+                <p>
+                    Preventive and breakdown maintenance
+                    services for industrial electrical systems.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">☀️</div>
+
+                <h3>Solar Solutions</h3>
+
+                <p>
+                    Solar electrical installation and
+                    maintenance solutions.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Projects</h2>
+
+            <span></span>
+
+            <p>
+                Some of our industrial and electrical projects.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <div class="project-card">
+
+                <img
+                    src="images/project-1.jpg"
+                    alt="Industrial Electrical Project">
+
+                <div class="project-overlay">
+
+                    <h3>Industrial Electrical Work</h3>
+
+                    <p>Electrical Installation</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img
+                    src="images/project-2.jpg"
+                    alt="HT Electrical Project">
+
+                <div class="project-overlay">
+
+                    <h3>HT Electrical Project</h3>
+
+                    <p>HT Installation & Maintenance</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img
+                    src="images/project-3.jpg"
+                    alt="LT Electrical Project">
+
+                <div class="project-overlay">
+
+                    <h3>LT Electrical Project</h3>
+
+                    <p>LT Distribution System</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img
+                    src="images/project-4.jpg"
+                    alt="Industrial Lighting">
+
+                <div class="project-overlay">
+
+                    <h3>Industrial Lighting</h3>
+
+                    <p>Lighting Installation</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img
+                    src="images/project-5.jpg"
+                    alt="Electrical Panel">
+
+                <div class="project-overlay">
+
+                    <h3>Electrical Panel Work</h3>
+
+                    <p>Panel Installation</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img
+                    src="images/project-6.jpg"
+                    alt="Electrical Maintenance">
+
+                <div class="project-overlay">
+
+                    <h3>Electrical Maintenance</h3>
+
+                    <p>Industrial Maintenance</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2 style="color:white;">Why Choose BM Enterprises?</h2>
+
+            <span></span>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <div class="why-box">
+
+                <div class="number">01</div>
+
+                <h3>Experience</h3>
+
+                <p>
+                    Experienced technical manpower
+                    and project execution team.
+                </p>
+
+            </div>
+
+
+            <div class="why-box">
+
+                <div class="number">02</div>
+
+                <h3>Quality</h3>
+
+                <p>
+                    Quality-focused electrical
+                    installation and services.
+                </p>
+
+            </div>
+
+
+            <div class="why-box">
+
+                <div class="number">03</div>
+
+                <h3>Safety</h3>
+
+                <p>
+                    Strong focus on electrical
+                    safety and site safety.
+                </p>
+
+            </div>
+
+
+            <div class="why-box">
+
+                <div class="number">04</div>
+
+                <h3>Support</h3>
+
+                <p>
+                    Reliable project execution
+                    and maintenance support.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CLIENTS
+========================= -->
+
+<section class="clients" id="clients">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Clients</h2>
+
+            <span></span>
+
+            <p>
+                We are proud to work with leading industrial
+                and commercial organizations.
+            </p>
+
+        </div>
+
+
+        <div class="client-grid">
+
+
+            <div class="client-box">
+                Perkins India Pvt. Ltd.
+            </div>
+
+
+            <div class="client-box">
+                Detpak India Pvt. Ltd.
+            </div>
+
+
+            <div class="client-box">
+                NLMK India
+            </div>
+
+
+            <div class="client-box">
+                Fytomax Nutritions
+            </div>
+
+
+            <div class="client-box">
+                Kohinoor Ropes
+            </div>
+
+
+            <div class="client-box">
+                Hyundai Motors
+            </div>
+
+
+            <div class="client-box">
+                NMDC
+            </div>
+
+
+            <div class="client-box">
+                Other Industrial Clients
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Contact Us</h2>
+
+            <span></span>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-box">
+
+                <h3>BM Enterprises</h3>
+
+                <div class="contact-item">
+
+                    <strong>Address</strong>
+
+                    Office No. 60, Samyak Estate,
+                    Opp. Hotel Silver Oak,
+                    Liebherr Chowk,
+                    Shendra MIDC,
+                    Chhatrapati Sambhajinagar -
+                    431154, Maharashtra, India.
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Mobile</strong>
+
+                    7875400932 / 956XXXXXXXX
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Email</strong>
+
+                    info@bmenterprises.in
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Business</strong>
+
+                    Government Approved Electrical Contractor
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>Electrical Contracting Services</h3>
+
+                <p>
+                    Contact BM Enterprises for industrial
+                    electrical installation, HT/LT works,
+                    electrical maintenance, lighting,
+                    panels and complete electrical solutions.
+                </p>
+
+                <br>
+
+                <a
+                    href="https://wa.me/917875400932"
+                    class="btn btn-primary"
+                    target="_blank">
+
+                    WhatsApp Us
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-company">
+        BM ENTERPRISES
+    </div>
+
+    <p>
+        Govt. Approved Electrical Contractor
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 BM Enterprises. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP FLOAT BUTTON
+========================= -->
+
+<a
+    href="https://wa.me/917875400932"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat on WhatsApp">
+
+    ☎
+
+</a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        document
+            .getElementById("navLinks")
+            .classList
+            .toggle("active");
+
+    }
+
+
+    /* Close mobile menu after clicking */
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document
+                .getElementById("navLinks")
+                .classList
+                .remove("active");
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+</html>
