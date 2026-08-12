@@ -1,6 +1,8 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -10,13 +12,36 @@
           content="BM Enterprises - Government Approved Electrical Contractor providing HT, LT, industrial electrical installation, maintenance and electrical solutions.">
 
     <meta name="keywords"
-          content="BM Enterprises, Electrical Contractor, HT Electrical Work, LT Electrical Work, Industrial Electrical Contractor, Aurangabad, Chhatrapati Sambhajinagar, Shendra MIDC">
+          content="BM Enterprises, Electrical Contractor, HT Electrical Work, LT Electrical Work, Industrial Electrical Contractor, Chhatrapati Sambhajinagar, Shendra MIDC">
 
     <meta name="author" content="BM Enterprises">
 
     <title>BM Enterprises | Govt. Approved Electrical Contractor</title>
 
+
     <style>
+
+        /* =====================================================
+           BM ENTERPRISES
+           SKY BLUE + ORANGE THEME
+        ===================================================== */
+
+        :root {
+            --sky-blue: #159BD7;
+            --light-blue: #EAF7FD;
+            --dark-blue: #073B5C;
+            --orange: #F7941D;
+            --light-orange: #FFF4E6;
+            --white: #FFFFFF;
+            --text: #222222;
+            --gray: #666666;
+            --light-gray: #F5FAFD;
+        }
+
+
+        /* =====================================================
+           BASIC
+        ===================================================== */
 
         * {
             margin: 0;
@@ -28,8 +53,8 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
-            color: #222;
-            background: #ffffff;
+            color: var(--text);
+            background: var(--white);
         }
 
         img {
@@ -42,24 +67,29 @@
             color: inherit;
         }
 
-        /* =========================
+
+        /* =====================================================
            HEADER
-        ========================= */
+        ===================================================== */
 
         header {
             width: 100%;
-            background: #0b1726;
-            color: white;
+            background: var(--dark-blue);
+            color: var(--white);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+
+            box-shadow:
+                0 3px 15px rgba(0,0,0,0.18);
         }
 
         .navbar {
-            max-width: 1200px;
+            max-width: 1250px;
             margin: auto;
-            padding: 12px 25px;
+
+            padding: 10px 25px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -72,23 +102,33 @@
         }
 
         .logo-area img {
-            width: 55px;
-            height: 55px;
+            width: 58px;
+            height: 58px;
+
             object-fit: contain;
-            background: white;
-            border-radius: 6px;
+
+            background: var(--white);
+
+            border-radius: 7px;
+
+            padding: 3px;
         }
 
         .logo-text h2 {
             font-size: 22px;
             letter-spacing: 1px;
+            color: var(--white);
         }
 
         .logo-text span {
-            font-size: 11px;
-            color: #ffbd00;
+            font-size: 10px;
+            color: var(--orange);
             font-weight: bold;
+            letter-spacing: 0.3px;
         }
+
+
+        /* NAVIGATION */
 
         .nav-links {
             display: flex;
@@ -99,104 +139,146 @@
         .nav-links a {
             font-size: 15px;
             font-weight: bold;
+            color: var(--white);
+
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: #ffbd00;
+            color: var(--orange);
         }
 
         .menu-btn {
             display: none;
+
             font-size: 28px;
             cursor: pointer;
+
+            color: var(--white);
         }
 
-        /* =========================
+
+        /* =====================================================
            HERO
-        ========================= */
+        ===================================================== */
 
         .hero {
             min-height: 90vh;
+
             background:
-                linear-gradient(rgba(5,15,25,0.75), rgba(5,15,25,0.75)),
+                linear-gradient(
+                    rgba(7,59,92,0.78),
+                    rgba(7,59,92,0.78)
+                ),
                 url("images/hero-1.jpg");
 
             background-size: cover;
             background-position: center;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
             text-align: center;
-            color: white;
-            padding: 50px 20px;
+
+            color: var(--white);
+
+            padding: 60px 20px;
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 950px;
         }
 
         .hero-content h1 {
-            font-size: 65px;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+            font-size: 68px;
+
+            margin-bottom: 8px;
+
+            letter-spacing: 3px;
+
+            font-weight: 800;
         }
 
         .hero-content h2 {
             font-size: 25px;
-            color: #ffbd00;
+
+            color: var(--orange);
+
             margin-bottom: 20px;
+
             text-transform: uppercase;
         }
 
         .hero-content p {
             font-size: 18px;
+
             max-width: 750px;
+
             margin: auto;
+
             color: #eeeeee;
         }
 
+
+        /* HERO BUTTONS */
+
         .hero-buttons {
             margin-top: 30px;
+
             display: flex;
+
             justify-content: center;
+
             gap: 15px;
+
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
+
             padding: 13px 28px;
+
             border-radius: 5px;
+
             font-weight: bold;
+
             transition: 0.3s;
         }
 
         .btn-primary {
-            background: #ffbd00;
-            color: #111;
+            background: var(--orange);
+
+            color: var(--white);
+
+            box-shadow:
+                0 5px 15px rgba(247,148,29,0.25);
         }
 
         .btn-primary:hover {
-            background: #ffffff;
-            transform: translateY(-2px);
+            background: var(--sky-blue);
+
+            transform: translateY(-3px);
         }
 
         .btn-outline {
-            border: 2px solid white;
-            color: white;
+            border: 2px solid var(--white);
+
+            color: var(--white);
         }
 
         .btn-outline:hover {
-            background: white;
-            color: #111;
+            background: var(--white);
+
+            color: var(--dark-blue);
         }
 
-        /* =========================
+
+        /* =====================================================
            COMMON SECTION
-        ========================= */
+        ===================================================== */
 
         section {
             padding: 80px 20px;
@@ -204,156 +286,219 @@
 
         .container {
             max-width: 1200px;
+
             margin: auto;
         }
 
         .section-title {
             text-align: center;
+
             margin-bottom: 50px;
         }
 
         .section-title h2 {
             font-size: 38px;
-            color: #0b1726;
+
+            color: var(--dark-blue);
+
             margin-bottom: 10px;
         }
 
         .section-title span {
             display: block;
-            width: 60px;
+
+            width: 65px;
+
             height: 4px;
-            background: #ffbd00;
+
+            background: var(--orange);
+
             margin: auto;
+
+            border-radius: 5px;
         }
 
         .section-title p {
             max-width: 700px;
+
             margin: 15px auto 0;
-            color: #666;
+
+            color: var(--gray);
         }
 
-        /* =========================
+
+        /* =====================================================
            ABOUT
-        ========================= */
+        ===================================================== */
 
         .about {
-            background: #f5f7fa;
+            background: var(--light-blue);
         }
 
         .about-grid {
             display: grid;
+
             grid-template-columns: 1fr 1fr;
+
             gap: 50px;
+
             align-items: center;
         }
 
         .about-image img {
             width: 100%;
+
             height: 400px;
+
             object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+            border-radius: 12px;
+
+            border-left: 5px solid var(--orange);
+
+            box-shadow:
+                0 10px 30px rgba(7,59,92,0.15);
         }
 
         .about-content h3 {
             font-size: 30px;
-            color: #0b1726;
+
+            color: var(--dark-blue);
+
             margin-bottom: 15px;
         }
 
         .about-content p {
             color: #555;
+
             margin-bottom: 15px;
         }
 
         .about-list {
             list-style: none;
+
             margin-top: 20px;
         }
 
         .about-list li {
             margin-bottom: 10px;
+
             font-weight: bold;
+
+            color: var(--dark-blue);
         }
 
         .about-list li::before {
             content: "✓";
-            color: #ffbd00;
+
+            color: var(--orange);
+
             font-weight: bold;
+
             margin-right: 10px;
         }
 
-        /* =========================
+
+        /* =====================================================
            SERVICES
-        ========================= */
+        ===================================================== */
 
         .services {
-            background: white;
+            background: var(--white);
         }
 
         .service-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 25px;
         }
 
         .service-card {
             padding: 35px 25px;
-            background: #f5f7fa;
+
+            background: var(--light-blue);
+
             border-radius: 10px;
+
             text-align: center;
+
             border-bottom: 4px solid transparent;
+
             transition: 0.3s;
         }
 
         .service-card:hover {
             transform: translateY(-8px);
-            border-bottom: 4px solid #ffbd00;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+            border-bottom: 4px solid var(--orange);
+
+            background: var(--white);
+
+            box-shadow:
+                0 10px 25px rgba(21,155,215,0.15);
         }
 
         .service-icon {
             font-size: 45px;
+
             margin-bottom: 15px;
         }
 
         .service-card h3 {
             font-size: 21px;
-            color: #0b1726;
+
+            color: var(--dark-blue);
+
             margin-bottom: 10px;
         }
 
         .service-card p {
-            color: #666;
+            color: var(--gray);
+
             font-size: 15px;
         }
 
-        /* =========================
+
+        /* =====================================================
            PROJECT GALLERY
-        ========================= */
+        ===================================================== */
 
         .projects {
-            background: #f5f7fa;
+            background: var(--light-gray);
         }
 
         .project-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 20px;
         }
 
         .project-card {
             position: relative;
+
             overflow: hidden;
-            border-radius: 8px;
-            height: 260px;
+
+            border-radius: 10px;
+
+            height: 270px;
+
             background: #ddd;
+
+            box-shadow:
+                0 5px 15px rgba(7,59,92,0.08);
         }
 
         .project-card img {
             width: 100%;
+
             height: 100%;
+
             object-fit: cover;
+
             transition: 0.5s;
         }
 
@@ -363,116 +508,196 @@
 
         .project-overlay {
             position: absolute;
+
             bottom: 0;
+
             left: 0;
+
             right: 0;
+
             padding: 20px;
-            color: white;
-            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(7,59,92,0.92)
+                );
         }
 
         .project-overlay h3 {
             font-size: 20px;
+
+            color: var(--white);
         }
 
         .project-overlay p {
             font-size: 13px;
+
+            color: #eeeeee;
         }
 
-        /* =========================
-           CLIENTS
-        ========================= */
+
+        /* =====================================================
+           CLIENTS - LOGO SECTION
+        ===================================================== */
 
         .clients {
-            background: white;
+            background: var(--white);
         }
 
         .client-grid {
             display: grid;
+
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+
+            gap: 25px;
         }
 
         .client-box {
-            min-height: 110px;
-            background: #f5f7fa;
-            border: 1px solid #e5e5e5;
+            height: 145px;
+
+            background: var(--white);
+
+            border: 1px solid #dceaf2;
+
+            border-radius: 10px;
+
             display: flex;
+
             justify-content: center;
+
             align-items: center;
-            text-align: center;
-            padding: 20px;
-            font-weight: bold;
-            color: #333;
-            border-radius: 8px;
+
+            padding: 25px;
+
             transition: 0.3s;
+
+            box-shadow:
+                0 5px 18px rgba(7,59,92,0.07);
         }
 
         .client-box:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transform: translateY(-6px);
+
+            border-color: var(--sky-blue);
+
+            box-shadow:
+                0 10px 25px rgba(21,155,215,0.15);
         }
 
-        /* =========================
-           WHY US
-        ========================= */
+        .client-box img {
+            max-width: 180px;
+
+            max-height: 85px;
+
+            width: auto;
+
+            height: auto;
+
+            object-fit: contain;
+        }
+
+
+        /* =====================================================
+           WHY CHOOSE US
+        ===================================================== */
 
         .why-us {
-            background: #0b1726;
-            color: white;
+            background: var(--dark-blue);
+
+            color: var(--white);
+        }
+
+        .why-us .section-title h2 {
+            color: var(--white);
         }
 
         .why-grid {
             display: grid;
+
             grid-template-columns: repeat(4, 1fr);
+
             gap: 25px;
+
             text-align: center;
         }
 
         .why-box {
-            padding: 20px;
+            padding: 25px;
+
+            border-radius: 10px;
+
+            background: rgba(255,255,255,0.04);
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            transition: 0.3s;
+        }
+
+        .why-box:hover {
+            transform: translateY(-5px);
+
+            border-color: var(--sky-blue);
         }
 
         .why-box .number {
             font-size: 40px;
-            color: #ffbd00;
+
+            color: var(--orange);
+
             font-weight: bold;
         }
 
         .why-box h3 {
             margin: 8px 0;
+
+            color: var(--white);
         }
 
         .why-box p {
-            color: #ccc;
+            color: #cccccc;
+
             font-size: 14px;
         }
 
-        /* =========================
+
+        /* =====================================================
            CONTACT
-        ========================= */
+        ===================================================== */
 
         .contact {
-            background: #f5f7fa;
+            background: var(--light-blue);
         }
 
         .contact-grid {
             display: grid;
+
             grid-template-columns: 1fr 1fr;
+
             gap: 40px;
         }
 
         .contact-box {
-            background: white;
+            background: var(--white);
+
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+            border-radius: 10px;
+
+            border-top: 4px solid var(--orange);
+
+            box-shadow:
+                0 5px 20px rgba(7,59,92,0.08);
         }
 
         .contact-box h3 {
             font-size: 25px;
+
             margin-bottom: 20px;
-            color: #0b1726;
+
+            color: var(--dark-blue);
         }
 
         .contact-item {
@@ -481,56 +706,91 @@
 
         .contact-item strong {
             display: block;
-            color: #0b1726;
+
+            color: var(--sky-blue);
+
             margin-bottom: 3px;
         }
 
-        /* =========================
+
+        /* =====================================================
            FOOTER
-        ========================= */
+        ===================================================== */
 
         footer {
-            background: #07101c;
-            color: white;
-            padding: 30px 20px;
+            background: var(--dark-blue);
+
+            color: var(--white);
+
+            padding: 35px 20px;
+
             text-align: center;
+
+            border-top: 4px solid var(--orange);
         }
 
         footer p {
-            color: #bbb;
+            color: #cccccc;
+
             font-size: 14px;
         }
 
         .footer-company {
-            font-size: 20px;
+            font-size: 22px;
+
             font-weight: bold;
+
             margin-bottom: 5px;
+
+            color: var(--white);
         }
 
-        /* =========================
+
+        /* =====================================================
            WHATSAPP
-        ========================= */
+        ===================================================== */
 
         .whatsapp {
             position: fixed;
+
             right: 20px;
+
             bottom: 20px;
+
             width: 58px;
+
             height: 58px;
+
             background: #25D366;
+
             color: white;
+
             border-radius: 50%;
+
             display: flex;
+
             justify-content: center;
+
             align-items: center;
+
             font-size: 28px;
+
             z-index: 2000;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+
+            box-shadow:
+                0 5px 15px rgba(0,0,0,0.25);
+
+            transition: 0.3s;
         }
 
-        /* =========================
-           MOBILE
-        ========================= */
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
 
         @media (max-width: 900px) {
 
@@ -553,7 +813,13 @@
             .why-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
         }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
 
         @media (max-width: 700px) {
 
@@ -563,12 +829,20 @@
 
             .logo-area img {
                 width: 45px;
+
                 height: 45px;
             }
 
             .logo-text h2 {
-                font-size: 19px;
+                font-size: 18px;
             }
+
+            .logo-text span {
+                font-size: 8px;
+            }
+
+
+            /* MOBILE MENU */
 
             .menu-btn {
                 display: block;
@@ -576,12 +850,19 @@
 
             .nav-links {
                 display: none;
+
                 position: absolute;
-                top: 69px;
+
+                top: 65px;
+
                 left: 0;
+
                 width: 100%;
-                background: #0b1726;
+
+                background: var(--dark-blue);
+
                 flex-direction: column;
+
                 gap: 0;
             }
 
@@ -590,29 +871,41 @@
             }
 
             .nav-links li {
-                border-top: 1px solid rgba(255,255,255,0.1);
+                border-top:
+                    1px solid rgba(255,255,255,0.1);
             }
 
             .nav-links a {
                 display: block;
+
                 padding: 15px 20px;
             }
 
+
+            /* HERO */
+
             .hero {
                 min-height: 80vh;
+
+                padding: 50px 18px;
             }
 
             .hero-content h1 {
                 font-size: 40px;
+
+                letter-spacing: 1px;
             }
 
             .hero-content h2 {
-                font-size: 19px;
+                font-size: 18px;
             }
 
             .hero-content p {
                 font-size: 15px;
             }
+
+
+            /* SECTIONS */
 
             section {
                 padding: 60px 18px;
@@ -621,6 +914,9 @@
             .section-title h2 {
                 font-size: 30px;
             }
+
+
+            /* ABOUT */
 
             .about-grid,
             .contact-grid {
@@ -631,26 +927,78 @@
                 height: 280px;
             }
 
-            .service-grid,
-            .project-grid,
-            .client-grid,
-            .why-grid {
+
+            /* SERVICES */
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            /* PROJECTS */
+
+            .project-grid {
                 grid-template-columns: 1fr;
             }
 
             .project-card {
                 height: 240px;
             }
+
+
+            /* CLIENT LOGOS */
+
+            .client-grid {
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 15px;
+            }
+
+            .client-box {
+                height: 110px;
+
+                padding: 15px;
+            }
+
+            .client-box img {
+                max-width: 125px;
+
+                max-height: 65px;
+            }
+
+
+            /* WHY */
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            /* WHATSAPP */
+
+            .whatsapp {
+                width: 52px;
+
+                height: 52px;
+
+                right: 15px;
+
+                bottom: 15px;
+            }
+
         }
 
     </style>
+
 </head>
+
 
 <body>
 
-<!-- =========================
+
+<!-- =====================================================
      HEADER
-========================= -->
+===================================================== -->
 
 <header>
 
@@ -658,20 +1006,35 @@
 
         <div class="logo-area">
 
-            <img src="images/logo.png" alt="BM Enterprises Logo">
+            <img
+                src="images/logo.png"
+                alt="BM Enterprises Logo">
 
             <div class="logo-text">
+
                 <h2>BM ENTERPRISES</h2>
-                <span>GOVT. APPROVED ELECTRICAL CONTRACTOR</span>
+
+                <span>
+                    GOVT. APPROVED ELECTRICAL CONTRACTOR
+                </span>
+
             </div>
 
         </div>
 
-        <div class="menu-btn" onclick="toggleMenu()">
+
+        <div
+            class="menu-btn"
+            onclick="toggleMenu()">
+
             ☰
+
         </div>
 
-        <ul class="nav-links" id="navLinks">
+
+        <ul
+            class="nav-links"
+            id="navLinks">
 
             <li>
                 <a href="#home">Home</a>
@@ -704,31 +1067,45 @@
 </header>
 
 
-<!-- =========================
+<!-- =====================================================
      HERO
-========================= -->
+===================================================== -->
 
-<section class="hero" id="home">
+<section
+    class="hero"
+    id="home">
 
     <div class="hero-content">
 
         <h1>BM ENTERPRISES</h1>
 
-        <h2>Govt. Approved Electrical Contractor</h2>
+        <h2>
+            Govt. Approved Electrical Contractor
+        </h2>
 
         <p>
             Reliable Electrical Engineering Solutions for
             Industrial, Commercial and Infrastructure Projects.
         </p>
 
+
         <div class="hero-buttons">
 
-            <a href="#services" class="btn btn-primary">
+            <a
+                href="#services"
+                class="btn btn-primary">
+
                 Our Services
+
             </a>
 
-            <a href="#contact" class="btn btn-outline">
+
+            <a
+                href="#contact"
+                class="btn btn-outline">
+
                 Contact Us
+
             </a>
 
         </div>
@@ -738,23 +1115,29 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      ABOUT
-========================= -->
+===================================================== -->
 
-<section class="about" id="about">
+<section
+    class="about"
+    id="about">
 
     <div class="container">
 
         <div class="section-title">
 
-            <h2>About BM Enterprises</h2>
+            <h2>
+                About BM Enterprises
+            </h2>
 
             <span></span>
 
         </div>
 
+
         <div class="about-grid">
+
 
             <div class="about-image">
 
@@ -764,35 +1147,55 @@
 
             </div>
 
+
             <div class="about-content">
 
-                <h3>Professional Electrical Solutions</h3>
+                <h3>
+                    Professional Electrical Solutions
+                </h3>
+
 
                 <p>
-                    BM Enterprises is a Government Approved Electrical
-                    Contractor providing complete electrical solutions
-                    for industrial, commercial and infrastructure projects.
+                    BM Enterprises is a Government Approved
+                    Electrical Contractor providing complete
+                    electrical solutions for industrial,
+                    commercial and infrastructure projects.
                 </p>
 
+
                 <p>
-                    Our experienced team specializes in electrical
-                    installation, maintenance, HT/LT electrical works,
-                    industrial projects and electrical equipment solutions.
+                    Our experienced team specializes in
+                    electrical installation, maintenance,
+                    HT/LT electrical works, industrial projects
+                    and electrical equipment solutions.
                 </p>
+
 
                 <ul class="about-list">
 
-                    <li>Government Approved Electrical Contractor</li>
+                    <li>
+                        Government Approved Electrical Contractor
+                    </li>
 
-                    <li>Industrial Electrical Installation</li>
+                    <li>
+                        Industrial Electrical Installation
+                    </li>
 
-                    <li>HT & LT Electrical Works</li>
+                    <li>
+                        HT & LT Electrical Works
+                    </li>
 
-                    <li>Electrical Maintenance</li>
+                    <li>
+                        Electrical Maintenance
+                    </li>
 
-                    <li>Experienced Technical Team</li>
+                    <li>
+                        Experienced Technical Team
+                    </li>
 
-                    <li>Quality & Safety Focused Work</li>
+                    <li>
+                        Quality & Safety Focused Work
+                    </li>
 
                 </ul>
 
@@ -805,17 +1208,22 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      SERVICES
-========================= -->
+===================================================== -->
 
-<section class="services" id="services">
+<section
+    class="services"
+    id="services">
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Our Services</h2>
+            <h2>
+                Our Services
+            </h2>
 
             <span></span>
 
@@ -832,13 +1240,18 @@
 
             <div class="service-card">
 
-                <div class="service-icon">⚡</div>
+                <div class="service-icon">
+                    ⚡
+                </div>
 
-                <h3>HT Electrical Works</h3>
+                <h3>
+                    HT Electrical Works
+                </h3>
 
                 <p>
                     HT electrical installation, maintenance,
-                    transformer, HT panel and related electrical works.
+                    transformer, HT panel and related
+                    electrical works.
                 </p>
 
             </div>
@@ -846,9 +1259,13 @@
 
             <div class="service-card">
 
-                <div class="service-icon">🔌</div>
+                <div class="service-icon">
+                    🔌
+                </div>
 
-                <h3>LT Electrical Works</h3>
+                <h3>
+                    LT Electrical Works
+                </h3>
 
                 <p>
                     LT panel installation, cable laying,
@@ -860,9 +1277,13 @@
 
             <div class="service-card">
 
-                <div class="service-icon">🏭</div>
+                <div class="service-icon">
+                    🏭
+                </div>
 
-                <h3>Industrial Electrical</h3>
+                <h3>
+                    Industrial Electrical
+                </h3>
 
                 <p>
                     Complete electrical installation and
@@ -874,13 +1295,18 @@
 
             <div class="service-card">
 
-                <div class="service-icon">💡</div>
+                <div class="service-icon">
+                    💡
+                </div>
 
-                <h3>Lighting Solutions</h3>
+                <h3>
+                    Lighting Solutions
+                </h3>
 
                 <p>
                     Industrial lighting, high bay lights,
-                    street lighting and complete lighting installation.
+                    street lighting and complete lighting
+                    installation.
                 </p>
 
             </div>
@@ -888,9 +1314,13 @@
 
             <div class="service-card">
 
-                <div class="service-icon">🔧</div>
+                <div class="service-icon">
+                    🔧
+                </div>
 
-                <h3>Electrical Maintenance</h3>
+                <h3>
+                    Electrical Maintenance
+                </h3>
 
                 <p>
                     Preventive and breakdown maintenance
@@ -902,9 +1332,13 @@
 
             <div class="service-card">
 
-                <div class="service-icon">☀️</div>
+                <div class="service-icon">
+                    ☀️
+                </div>
 
-                <h3>Solar Solutions</h3>
+                <h3>
+                    Solar Solutions
+                </h3>
 
                 <p>
                     Solar electrical installation and
@@ -921,17 +1355,22 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      PROJECTS
-========================= -->
+===================================================== -->
 
-<section class="projects" id="projects">
+<section
+    class="projects"
+    id="projects">
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Our Projects</h2>
+            <h2>
+                Our Projects
+            </h2>
 
             <span></span>
 
@@ -953,9 +1392,13 @@
 
                 <div class="project-overlay">
 
-                    <h3>Industrial Electrical Work</h3>
+                    <h3>
+                        Industrial Electrical Work
+                    </h3>
 
-                    <p>Electrical Installation</p>
+                    <p>
+                        Electrical Installation
+                    </p>
 
                 </div>
 
@@ -970,9 +1413,13 @@
 
                 <div class="project-overlay">
 
-                    <h3>HT Electrical Project</h3>
+                    <h3>
+                        HT Electrical Project
+                    </h3>
 
-                    <p>HT Installation & Maintenance</p>
+                    <p>
+                        HT Installation & Maintenance
+                    </p>
 
                 </div>
 
@@ -987,9 +1434,13 @@
 
                 <div class="project-overlay">
 
-                    <h3>LT Electrical Project</h3>
+                    <h3>
+                        LT Electrical Project
+                    </h3>
 
-                    <p>LT Distribution System</p>
+                    <p>
+                        LT Distribution System
+                    </p>
 
                 </div>
 
@@ -1004,9 +1455,13 @@
 
                 <div class="project-overlay">
 
-                    <h3>Industrial Lighting</h3>
+                    <h3>
+                        Industrial Lighting
+                    </h3>
 
-                    <p>Lighting Installation</p>
+                    <p>
+                        Lighting Installation
+                    </p>
 
                 </div>
 
@@ -1021,9 +1476,13 @@
 
                 <div class="project-overlay">
 
-                    <h3>Electrical Panel Work</h3>
+                    <h3>
+                        Electrical Panel Work
+                    </h3>
 
-                    <p>Panel Installation</p>
+                    <p>
+                        Panel Installation
+                    </p>
 
                 </div>
 
@@ -1038,9 +1497,13 @@
 
                 <div class="project-overlay">
 
-                    <h3>Electrical Maintenance</h3>
+                    <h3>
+                        Electrical Maintenance
+                    </h3>
 
-                    <p>Industrial Maintenance</p>
+                    <p>
+                        Industrial Maintenance
+                    </p>
 
                 </div>
 
@@ -1054,17 +1517,20 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      WHY CHOOSE US
-========================= -->
+===================================================== -->
 
 <section class="why-us">
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2 style="color:white;">Why Choose BM Enterprises?</h2>
+            <h2>
+                Why Choose BM Enterprises?
+            </h2>
 
             <span></span>
 
@@ -1076,9 +1542,13 @@
 
             <div class="why-box">
 
-                <div class="number">01</div>
+                <div class="number">
+                    01
+                </div>
 
-                <h3>Experience</h3>
+                <h3>
+                    Experience
+                </h3>
 
                 <p>
                     Experienced technical manpower
@@ -1090,9 +1560,13 @@
 
             <div class="why-box">
 
-                <div class="number">02</div>
+                <div class="number">
+                    02
+                </div>
 
-                <h3>Quality</h3>
+                <h3>
+                    Quality
+                </h3>
 
                 <p>
                     Quality-focused electrical
@@ -1104,9 +1578,13 @@
 
             <div class="why-box">
 
-                <div class="number">03</div>
+                <div class="number">
+                    03
+                </div>
 
-                <h3>Safety</h3>
+                <h3>
+                    Safety
+                </h3>
 
                 <p>
                     Strong focus on electrical
@@ -1118,9 +1596,13 @@
 
             <div class="why-box">
 
-                <div class="number">04</div>
+                <div class="number">
+                    04
+                </div>
 
-                <h3>Support</h3>
+                <h3>
+                    Support
+                </h3>
 
                 <p>
                     Reliable project execution
@@ -1137,17 +1619,22 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      CLIENTS
-========================= -->
+===================================================== -->
 
-<section class="clients" id="clients">
+<section
+    class="clients"
+    id="clients">
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Our Clients</h2>
+            <h2>
+                Our Clients
+            </h2>
 
             <span></span>
 
@@ -1162,43 +1649,80 @@
         <div class="client-grid">
 
 
+            <!-- PERKINS -->
+
             <div class="client-box">
-                Perkins India Pvt. Ltd.
+
+                <img
+                    src="images/clients/perkins.png"
+                    alt="Perkins India">
+
             </div>
 
 
+            <!-- DETPAK -->
+
             <div class="client-box">
-                Detpak India Pvt. Ltd.
+
+                <img
+                    src="images/clients/detpak.png"
+                    alt="Detpak India">
+
             </div>
 
 
+            <!-- NLMK -->
+
             <div class="client-box">
-                NLMK India
+
+                <img
+                    src="images/clients/nlmk.png"
+                    alt="NLMK India">
+
             </div>
 
 
+            <!-- FYTOMAX -->
+
             <div class="client-box">
-                Fytomax Nutritions
+
+                <img
+                    src="images/clients/fytomax.png"
+                    alt="Fytomax Nutritions">
+
             </div>
 
 
+            <!-- KOHINOOR -->
+
             <div class="client-box">
-                Kohinoor Ropes
+
+                <img
+                    src="images/clients/kohinoor.png"
+                    alt="Kohinoor Ropes">
+
             </div>
 
 
+            <!-- HYUNDAI -->
+
             <div class="client-box">
-                Hyundai Motors
+
+                <img
+                    src="images/clients/hyundai.png"
+                    alt="Hyundai Motors">
+
             </div>
 
 
-            <div class="client-box">
-                NMDC
-            </div>
-
+            <!-- NMDC -->
 
             <div class="client-box">
-                Other Industrial Clients
+
+                <img
+                    src="images/clients/nmdc.png"
+                    alt="NMDC">
+
             </div>
 
 
@@ -1209,17 +1733,22 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      CONTACT
-========================= -->
+===================================================== -->
 
-<section class="contact" id="contact">
+<section
+    class="contact"
+    id="contact">
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Contact Us</h2>
+            <h2>
+                Contact Us
+            </h2>
 
             <span></span>
 
@@ -1231,11 +1760,16 @@
 
             <div class="contact-box">
 
-                <h3>BM Enterprises</h3>
+                <h3>
+                    BM Enterprises
+                </h3>
+
 
                 <div class="contact-item">
 
-                    <strong>Address</strong>
+                    <strong>
+                        Address
+                    </strong>
 
                     Office No. 60, Samyak Estate,
                     Opp. Hotel Silver Oak,
@@ -1249,7 +1783,9 @@
 
                 <div class="contact-item">
 
-                    <strong>Mobile</strong>
+                    <strong>
+                        Mobile
+                    </strong>
 
                     7875400932 / 956XXXXXXXX
 
@@ -1258,7 +1794,9 @@
 
                 <div class="contact-item">
 
-                    <strong>Email</strong>
+                    <strong>
+                        Email
+                    </strong>
 
                     info@bmenterprises.in
 
@@ -1267,7 +1805,9 @@
 
                 <div class="contact-item">
 
-                    <strong>Business</strong>
+                    <strong>
+                        Business
+                    </strong>
 
                     Government Approved Electrical Contractor
 
@@ -1278,16 +1818,23 @@
 
             <div class="contact-box">
 
-                <h3>Electrical Contracting Services</h3>
+                <h3>
+                    Electrical Contracting Services
+                </h3>
+
 
                 <p>
+
                     Contact BM Enterprises for industrial
                     electrical installation, HT/LT works,
                     electrical maintenance, lighting,
                     panels and complete electrical solutions.
+
                 </p>
 
+
                 <br>
+
 
                 <a
                     href="https://wa.me/917875400932"
@@ -1308,32 +1855,42 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
     <div class="footer-company">
+
         BM ENTERPRISES
+
     </div>
 
+
     <p>
+
         Govt. Approved Electrical Contractor
+
     </p>
+
 
     <br>
 
+
     <p>
-        © 2026 BM Enterprises. All Rights Reserved.
+
+        © 2026 BM Enterprises.
+        All Rights Reserved.
+
     </p>
 
 </footer>
 
 
-<!-- =========================
+<!-- =====================================================
      WHATSAPP FLOAT BUTTON
-========================= -->
+===================================================== -->
 
 <a
     href="https://wa.me/917875400932"
@@ -1346,9 +1903,9 @@
 </a>
 
 
-<!-- =========================
+<!-- =====================================================
      JAVASCRIPT
-========================= -->
+===================================================== -->
 
 <script>
 
@@ -1364,21 +1921,27 @@
 
     /* Close mobile menu after clicking */
 
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach(function(link) {
 
-        link.addEventListener("click", function() {
+            link.addEventListener(
+                "click",
+                function() {
 
-            document
-                .getElementById("navLinks")
-                .classList
-                .remove("active");
+                    document
+                        .getElementById("navLinks")
+                        .classList
+                        .remove("active");
+
+                }
+            );
 
         });
-
-    });
 
 </script>
 
 
 </body>
 </html>
+```
