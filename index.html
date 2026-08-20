@@ -274,8 +274,117 @@
 
             color: var(--dark-blue);
         }
+        /* =====================================================
+   DIRECTORS / LEADERSHIP - HERO
+===================================================== */
+
+.directors-section {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.directors-title {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.directors-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+
+.director-card {
+    width: 230px;
+    text-align: center;
+}
+
+.director-photo {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 14px;
+
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 50%;
+
+    border: 5px solid var(--white);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.35);
+
+    background: var(--white);
+}
+
+.director-name {
+    color: var(--white);
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.director-position {
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.director-message {
+    color: rgba(255,255,255,0.90);
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 230px;
+    margin: auto;
+}
 
 
+/* =====================================================
+   MOBILE DIRECTORS
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .directors-section {
+        margin-top: 30px;
+    }
+
+    .directors-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .directors-grid {
+        gap: 30px;
+    }
+
+    .director-card {
+        width: 200px;
+    }
+
+    .director-photo {
+        width: 135px;
+        height: 135px;
+    }
+
+    .director-name {
+        font-size: 17px;
+    }
+
+    .director-message {
+        font-size: 12px;
+    }
+}
+        
         /* =====================================================
            COMMON SECTION
         ===================================================== */
