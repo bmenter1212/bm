@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="BM Enterprises Supply Hub - Electrical products, wires, cables, switchgear, motors, automation, lighting, solar products and industrial electrical supplies.">
+
+    <meta name="keywords"
+          content="BM Enterprises Supply Hub, Electrical Supplies, Wires Cables, Switchgear, Motors, Electrical Components, Industrial Electrical Products">
+
+    <meta name="author"
+          content="BM Enterprises">
+
+    <title>Supply Hub | BM Enterprises</title>
+
+
+    <style>
+
+        /* =====================================================
+           BM ENTERPRISES - SUPPLY HUB
+           SKY BLUE + ORANGE THEME
+        ===================================================== */
+
+        :root {
+            --sky-blue: #159BD7;
+            --light-blue: #EAF7FD;
+            --dark-blue: #073B5C;
+            --orange: #F7941D;
+            --light-orange: #FFF4E6;
+            --white: #FFFFFF;
+            --text: #222222;
+            --gray: #666666;
+            --light-gray: #F5FAFD;
+            --border: #DCEAF2;
+        }
+
+
+        /* =====================================================
+           BASIC
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: #f7f9fb;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            width: 100%;
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            box-shadow:
+                0 3px 15px rgba(0, 0, 0, 0.10);
+        }
+
+        .top-header {
+            max-width: 1250px;
+            margin: auto;
+
+            min-height: 75px;
+
+            padding: 10px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 25px;
+        }
+
+
+        /* =====================================================
+           LOGO
+        ===================================================== */
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            flex-shrink: 0;
+        }
+
+        .logo-area img {
+            width: 58px;
+            height: 58px;
+
+            object-fit: contain;
+
+            background: var(--white);
+
+            border-radius: 7px;
+
+            padding: 3px;
+        }
+
+        .logo-text h2 {
+            font-size: 21px;
+
+            letter-spacing: 1px;
+
+            color: var(--dark-blue);
+        }
+
+        .logo-text span {
+            font-size: 9px;
+
+            color: var(--orange);
+
+            font-weight: bold;
+
+            letter-spacing: 0.3px;
+        }
+
+
+        /* =====================================================
+           TOP NAVIGATION
+        ===================================================== */
+
+        .top-nav {
+            display: flex;
+
+            align-items: center;
+
+            gap: 22px;
+
+            list-style: none;
+        }
+
+        .top-nav a {
+            font-size: 14px;
+
+            font-weight: bold;
+
+            color: var(--dark-blue);
+
+            transition: 0.3s;
+        }
+
+        .top-nav a:hover {
+            color: var(--orange);
+        }
+
+
+        /* BACK TO WEBSITE BUTTON */
+
+        .website-btn {
+            background: var(--sky-blue);
+
+            color: var(--white) !important;
+
+            padding: 10px 18px;
+
+            border-radius: 5px;
+
+            transition: 0.3s;
+        }
+
+        .website-btn:hover {
+            background: var(--orange);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           SUPPLY HERO
+        ===================================================== */
+
+        .supply-hero {
+            background:
+                linear-gradient(
+                    rgba(7, 59, 92, 0.94),
+                    rgba(7, 59, 92, 0.94)
+                );
+
+            color: var(--white);
+
+            padding: 45px 20px;
+
+            text-align: center;
+        }
+
+        .supply-hero h1 {
+            font-size: 42px;
+
+            margin-bottom: 8px;
+
+            letter-spacing: 1px;
+        }
+
+        .supply-hero h1 span {
+            color: var(--orange);
+        }
+
+        .supply-hero p {
+            font-size: 17px;
+
+            color: #e8eef2;
+
+            max-width: 750px;
+
+            margin: auto;
+        }
+
+
+        /* =====================================================
+           SEARCH SECTION
+        ===================================================== */
+
+        .search-area {
+            background: var(--white);
+
+            padding: 20px;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .search-box {
+            max-width: 800px;
+
+            margin: auto;
+
+            display: flex;
+
+            border: 2px solid var(--sky-blue);
+
+            border-radius: 5px;
+
+            overflow: hidden;
+
+            background: var(--white);
+        }
+
+        .search-box input {
+            width: 100%;
+
+            border: none;
+
+            outline: none;
+
+            padding: 14px 18px;
+
+            font-size: 15px;
+
+            color: var(--text);
+        }
+
+        .search-box button {
+            width: 60px;
+
+            border: none;
+
+            background: var(--sky-blue);
+
+            color: var(--white);
+
+            font-size: 21px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .search-box button:hover {
+            background: var(--orange);
+        }
+
+
+        /* =====================================================
+           MAIN
+        ===================================================== */
+
+        main {
+            padding: 45px 20px 70px;
+        }
+
+        .container {
+            max-width: 1250px;
+
+            margin: auto;
+        }
+
+
+        /* =====================================================
+           SECTION TITLE
+        ===================================================== */
+
+        .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .section-heading h2 {
+            font-size: 28px;
+
+            color: var(--dark-blue);
+
+            margin-bottom: 5px;
+        }
+
+        .section-heading p {
+            color: var(--gray);
+
+            font-size: 15px;
+        }
+
+        .heading-line {
+            width: 55px;
+
+            height: 4px;
+
+            background: var(--orange);
+
+            border-radius: 5px;
+
+            margin-top: 10px;
+        }
+
+
+        /* =====================================================
+           CATEGORY GRID
+        ===================================================== */
+
+        .category-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 18px;
+        }
+
+
+        /* =====================================================
+           CATEGORY CARD
+        ===================================================== */
+
+        .category-card {
+            background: var(--white);
+
+            border: 1px solid var(--border);
+
+            border-radius: 8px;
+
+            min-height: 190px;
+
+            padding: 20px 15px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            box-shadow:
+                0 4px 15px rgba(7, 59, 92, 0.06);
+
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s,
+                border-color 0.3s;
+
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-7px);
+
+            border-color: var(--sky-blue);
+
+            box-shadow:
+                0 12px 25px rgba(21, 155, 215, 0.18);
+        }
+
+
+        /* CATEGORY IMAGE */
+
+        .category-image {
+            width: 130px;
+
+            height: 105px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            margin-bottom: 12px;
+        }
+
+        .category-image img {
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+
+            transition: 0.3s;
+        }
+
+        .category-card:hover .category-image img {
+            transform: scale(1.08);
+        }
+
+
+        /* CATEGORY NAME */
+
+        .category-card h3 {
+            font-size: 16px;
+
+            color: var(--dark-blue);
+
+            line-height: 1.3;
+
+            margin-bottom: 4px;
+        }
+
+        .category-card .view-text {
+            font-size: 12px;
+
+            color: var(--sky-blue);
+
+            font-weight: bold;
+
+            opacity: 0;
+
+            transition: 0.3s;
+        }
+
+        .category-card:hover .view-text {
+            opacity: 1;
+        }
+
+
+        /* =====================================================
+           INFORMATION SECTION
+        ===================================================== */
+
+        .supply-info {
+            margin-top: 55px;
+
+            background: var(--white);
+
+            border-radius: 10px;
+
+            padding: 30px;
+
+            border-left: 5px solid var(--orange);
+
+            box-shadow:
+                0 5px 20px rgba(7, 59, 92, 0.07);
+        }
+
+        .supply-info h2 {
+            color: var(--dark-blue);
+
+            margin-bottom: 12px;
+
+            font-size: 25px;
+        }
+
+        .supply-info p {
+            color: var(--gray);
+
+            font-size: 15px;
+
+            margin-bottom: 10px;
+        }
+
+        .supply-info strong {
+            color: var(--dark-blue);
+        }
+
+
+        /* =====================================================
+           QUICK CONTACT
+        ===================================================== */
+
+        .quick-contact {
+            margin-top: 25px;
+
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-block;
+
+            padding: 11px 20px;
+
+            border-radius: 5px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .contact-btn-primary {
+            background: var(--orange);
+
+            color: var(--white);
+        }
+
+        .contact-btn-primary:hover {
+            background: var(--sky-blue);
+
+            transform: translateY(-2px);
+        }
+
+        .contact-btn-secondary {
+            background: var(--dark-blue);
+
+            color: var(--white);
+        }
+
+        .contact-btn-secondary:hover {
+            background: var(--sky-blue);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: var(--dark-blue);
+
+            color: var(--white);
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            border-top: 4px solid var(--orange);
+        }
+
+        .footer-company {
+            font-size: 21px;
+
+            font-weight: bold;
+
+            margin-bottom: 5px;
+        }
+
+        footer p {
+            color: #cccccc;
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           WHATSAPP
+        ===================================================== */
+
+        .whatsapp {
+            position: fixed;
+
+            right: 20px;
+
+            bottom: 20px;
+
+            width: 55px;
+
+            height: 55px;
+
+            background: #25D366;
+
+            color: var(--white);
+
+            border-radius: 50%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 27px;
+
+            z-index: 2000;
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.25);
+
+            transition: 0.3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 1100px) {
+
+            .category-grid {
+                grid-template-columns:
+                    repeat(4, 1fr);
+            }
+
+            .top-nav {
+                gap: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 850px) {
+
+            .category-grid {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+            .top-nav {
+                display: none;
+            }
+
+            .top-header {
+                justify-content: center;
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .top-header {
+                min-height: 65px;
+
+                padding: 8px 15px;
+            }
+
+            .logo-area img {
+                width: 45px;
+
+                height: 45px;
+            }
+
+            .logo-text h2 {
+                font-size: 17px;
+            }
+
+            .logo-text span {
+                font-size: 7px;
+            }
+
+
+            .supply-hero {
+                padding: 35px 18px;
+            }
+
+            .supply-hero h1 {
+                font-size: 30px;
+            }
+
+            .supply-hero p {
+                font-size: 14px;
+            }
+
+
+            main {
+                padding: 35px 15px 55px;
+            }
+
+
+            .section-heading h2 {
+                font-size: 24px;
+            }
+
+
+            .category-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+                gap: 12px;
+            }
+
+
+            .category-card {
+                min-height: 165px;
+
+                padding: 15px 8px;
+            }
+
+
+            .category-image {
+                width: 100px;
+
+                height: 80px;
+            }
+
+
+            .category-card h3 {
+                font-size: 14px;
+            }
+
+
+            .category-card .view-text {
+                opacity: 1;
+            }
+
+
+            .supply-info {
+                padding: 22px;
+
+                margin-top: 40px;
+            }
+
+
+            .quick-contact {
+                flex-direction: column;
+            }
+
+
+            .contact-btn {
+                text-align: center;
+
+                width: 100%;
+            }
+
+
+            .whatsapp {
+                width: 50px;
+
+                height: 50px;
+
+                right: 15px;
+
+                bottom: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <div class="top-header">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo-area">
+
+            <img
+                src="logo.png"
+                alt="BM Enterprises Logo">
+
+            <div class="logo-text">
+
+                <h2>
+                    BM ENTERPRISES
+                </h2>
+
+                <span>
+                    GOVT. APPROVED ELECTRICAL CONTRACTOR
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <ul class="top-nav">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#services">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#projects">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="index.html"
+                    class="website-btn">
+
+                    Main Website
+
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SUPPLY HERO
+===================================================== -->
+
+<section class="supply-hero">
+
+    <h1>
+        BM Enterprises <span>Supply Hub</span>
+    </h1>
+
+    <p>
+        Industrial Electrical Products &amp;
+        Complete Electrical Supply Solutions
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     SEARCH
+===================================================== -->
+
+<div class="search-area">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search product or category...">
+
+        <button
+            type="button"
+            onclick="searchProducts()">
+
+            🔍
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main>
+
+    <div class="container">
+
+
+        <!-- =================================================
+             CATEGORY TITLE
+        ================================================== -->
+
+        <div class="section-heading">
+
+            <h2>
+                Explore Categories
+            </h2>
+
+            <div class="heading-line"></div>
+
+            <p>
+                Select a category to explore our
+                electrical products and solutions.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             CATEGORY GRID
+        ================================================== -->
+
+        <div class="category-grid"
+             id="categoryGrid">
+
+
+            <!-- =================================================
+                 01 - WIRES & CABLES
+            ================================================== -->
+
+            <a
+                href="wire.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/wires-cables.png"
+                        alt="Wires and Cables">
+
+                </div>
+
+                <h3>
+                    Wires &amp; Cables
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 02 - SWITCHGEAR
+            ================================================== -->
+
+            <a
+                href="switchgear.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/switchgear.png"
+                        alt="Switchgear">
+
+                </div>
+
+                <h3>
+                    Switchgear
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 03 - ELECTRICAL PANELS
+            ================================================== -->
+
+            <a
+                href="electrical-panels.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/electrical-panels.png"
+                        alt="Electrical Panels">
+
+                </div>
+
+                <h3>
+                    Electrical Panels
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 04 - TRANSFORMERS
+            ================================================== -->
+
+            <a
+                href="transformers.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/transformer.png"
+                        alt="Transformers">
+
+                </div>
+
+                <h3>
+                    Transformers
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 05 - MOTORS
+            ================================================== -->
+
+            <a
+                href="motors.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/motors.png"
+                        alt="Electric Motors">
+
+                </div>
+
+                <h3>
+                    Motors
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 06 - GEARBOXES
+            ================================================== -->
+
+            <a
+                href="gearboxes.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/gearbox.png"
+                        alt="Gearboxes">
+
+                </div>
+
+                <h3>
+                    Gearboxes
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 07 - DRIVES
+            ================================================== -->
+
+            <a
+                href="drives.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/drives.png"
+                        alt="AC Drives and VFD">
+
+                </div>
+
+                <h3>
+                    Drives &amp; VFD
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 08 - AUTOMATION
+            ================================================== -->
+
+            <a
+                href="automation.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/automation.png"
+                        alt="Industrial Automation">
+
+                </div>
+
+                <h3>
+                    Industrial Automation
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 09 - LIGHTING
+            ================================================== -->
+
+            <a
+                href="lighting.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/lighting.png"
+                        alt="Industrial Lighting">
+
+                </div>
+
+                <h3>
+                    Lighting
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 10 - SOLAR
+            ================================================== -->
+
+            <a
+                href="solar.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/solar.png"
+                        alt="Solar Products">
+
+                </div>
+
+                <h3>
+                    Solar Products
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 11 - BEARINGS
+            ================================================== -->
+
+            <a
+                href="bearings.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/bearings.png"
+                        alt="Industrial Bearings">
+
+                </div>
+
+                <h3>
+                    Bearings
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 12 - PNEUMATICS
+            ================================================== -->
+
+            <a
+                href="pneumatics.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/pneumatics.png"
+                        alt="Pneumatics">
+
+                </div>
+
+                <h3>
+                    Pneumatics
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 13 - ELECTRICAL COMPONENTS
+            ================================================== -->
+
+            <a
+                href="electrical-components.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/electrical-components.png"
+                        alt="Electrical Components">
+
+                </div>
+
+                <h3>
+                    Electrical Components
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 14 - CONTROL COMPONENTS
+            ================================================== -->
+
+            <a
+                href="control-components.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/control-components.png"
+                        alt="Control Components">
+
+                </div>
+
+                <h3>
+                    Control Components
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 15 - INDUSTRIAL INSTRUMENTS
+            ================================================== -->
+
+            <a
+                href="instruments.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/instruments.png"
+                        alt="Industrial Instruments">
+
+                </div>
+
+                <h3>
+                    Industrial Instruments
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 16 - EOT CRANE
+            ================================================== -->
+
+            <a
+                href="eot-crane.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/eot-crane.png"
+                        alt="EOT Crane Electrical Products">
+
+                </div>
+
+                <h3>
+                    EOT Crane Products
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 17 - CABLE MANAGEMENT
+            ================================================== -->
+
+            <a
+                href="cable-management.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/cable-management.png"
+                        alt="Cable Management">
+
+                </div>
+
+                <h3>
+                    Cable Management
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 18 - INDUSTRIAL SAFETY
+            ================================================== -->
+
+            <a
+                href="industrial-safety.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/industrial-safety.png"
+                        alt="Industrial Safety Products">
+
+                </div>
+
+                <h3>
+                    Industrial Safety
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 19 - LUBRICANTS
+            ================================================== -->
+
+            <a
+                href="lubricants.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/lubricants.png"
+                        alt="Industrial Lubricants">
+
+                </div>
+
+                <h3>
+                    Industrial Lubricants
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 20 - WIRING ACCESSORIES
+            ================================================== -->
+
+            <a
+                href="wiring-accessories.html"
+                class="category-card">
+
+                <div class="category-image">
+
+                    <img
+                        src="supply-images/wiring-accessories.png"
+                        alt="Wiring Accessories">
+
+                </div>
+
+                <h3>
+                    Wiring Accessories
+                </h3>
+
+                <span class="view-text">
+                    View Products →
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+        <!-- =================================================
+             INFORMATION
+        ================================================== -->
+
+        <div class="supply-info">
+
+            <h2>
+                BM Enterprises Electrical Supply
+            </h2>
+
+            <p>
+                BM Enterprises provides reliable electrical
+                products and industrial electrical supply
+                solutions for factories, commercial projects,
+                infrastructure projects and electrical
+                contractors.
+            </p>
+
+            <p>
+                We can assist with sourcing of
+                <strong>
+                    cables, switchgear, electrical panels,
+                    motors, drives, automation products,
+                    lighting, solar products, electrical
+                    components and industrial equipment.
+                </strong>
+            </p>
+
+            <p>
+                For product availability, specifications,
+                brand requirements and quotations, contact
+                our team directly.
+            </p>
+
+
+            <div class="quick-contact">
+
+                <a
+                    href="https://wa.me/919561549685"
+                    target="_blank"
+                    class="contact-btn contact-btn-primary">
+
+                    WhatsApp for Enquiry
+
+                </a>
+
+
+                <a
+                    href="tel:+919561549685"
+                    class="contact-btn contact-btn-secondary">
+
+                    Call Us
+
+                </a>
+
+
+                <a
+                    href="index.html#contact"
+                    class="contact-btn contact-btn-secondary">
+
+                    Contact BM Enterprises
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-company">
+        BM ENTERPRISES
+    </div>
+
+    <p>
+        Govt. Approved Electrical Contractor
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 BM Enterprises.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a
+    href="https://wa.me/919561549685"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat on WhatsApp">
+
+    ☎
+
+</a>
+
+
+<!-- =====================================================
+     SEARCH JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    function searchProducts() {
+
+        let input =
+            document
+            .getElementById("productSearch")
+            .value
+            .toLowerCase()
+            .trim();
+
+        let cards =
+            document
+            .querySelectorAll(".category-card");
+
+
+        cards.forEach(function(card) {
+
+            let name =
+                card
+                .querySelector("h3")
+                .innerText
+                .toLowerCase();
+
+
+            if (
+                name.includes(input) ||
+                input === ""
+            ) {
+
+                card.style.display = "flex";
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    }
+
+
+    /* Search while typing */
+
+    document
+        .getElementById("productSearch")
+        .addEventListener(
+            "keyup",
+            searchProducts
+        );
+
+</script>
+
+
+</body>
+
+</html>
